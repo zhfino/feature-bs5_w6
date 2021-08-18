@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%- title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/style/all.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
 
-  <body>
-    <header class="header position-relative">
-      <h1 class="position-absolute top-50 start-50 translate-middle"><a href="index.html">EXHIBINECTION</a></h1>
-      <ul class="list-unstyled container memberStateH d-flex ">
-        <li class="me32"><a href="">Sign in</a></li>
-        <li class="me32"><a href="">Sign up</a></li>
-        <li class=""><a href=""><img src="" alt="">Cart</a></li>
-      </ul>
+<body>
+  <header class="header position-relative">
+    <h1 class="position-absolute top-50 start-50 translate-middle"><a href="index.html">EXHIBINECTION</a></h1>
+    <ul class="list-unstyled container memberState d-flex justify-content-end align-items-center">
+      <li><a href=""  class="me32 text-secondary">Sign in</a></li>
+      <li><a href=""  class="me32 text-secondary">Sign up</a></li>
+      <li class=""><a href=""><img src="" alt="">Cart</a></li>
+    </ul>
 
-    </header>
+  </header>
 
-    <%- contents %>
+  <%- contents %>
 
-    <footer class="footer">
-      <div class="sub">
-        <p>想收到最新消息嗎？ 快訂閱我們！</p>
-
-      </div>
-      <div class="footerBar container d-flex">
-        <div class="home d-flex">
-          <p>EXHIBINECTION</p>
-          <p>© 2020. All Rights Reserved.</p>
+  <footer class="footer">
+    <div class="sub">
+      <div class="container">
+        <div class="row">
+          <p>想收到最新消息嗎？ </br>快訂閱我們！</p>
+          <div class="col-4">
+            <div class="input-group subMail">
+              <input type="text" class="form-control" placeholder="請輸入您的電子信箱">
+              <button type="button" class="btn btn-info mailBtn">訂閱</button>
+            </div>
+          </div>
         </div>
-
-          <ul class="list-unstyled container d-flex ">
-            <li class="me32"><a href="">Sign in</a></li>
-            <li class="me32"><a href="">Sign up</a></li>
-          </ul>
-
       </div>
-    </footer>
 
-    <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/all.js"></script>
-  </body>
+    </div>
+    <div class="footerBar container d-flex justify-content-between ">
+      <div class="d-flex">
+        <p class="my-4 pe-3 homeText">EXHIBINECTION</p>
+        <p class="my-4 copyright">© 2020. All Rights Reserved.</p>
+      </div>
+      <ul class="list-unstyled d-flex my-4">
+        <li><a href=""  class="me32 text-secondary">Sign in</a></li>
+        <li><a href=""  class="me32 text-secondary">Sign up</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
 
 </html>

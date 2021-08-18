@@ -1,18 +1,45 @@
-.header{
+.header {
     height: 80px;
-    border:1px $secondary solid;
+    border: 1px $secondary solid;
 }
 
-.memberStateH{
-    justify-content: end;
-    align-items: center;
+.memberState {
     height: 80px;
 }
 
-.footer{
+.sub {
+    height: 400px;
+    background-image: url('https://raw.githubusercontent.com/zhfino/feature-bs5_w6/main/app/assets/images/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
 
+    p {
+        font-size: 32px;
+        font-weight: bold;
+        color: white;
+        padding-top: 208px;
+    }
+
+    .subMail {
+        margin-bottom: 36px;
+
+        .mailBtn {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 52px;
+            padding-right: 52px;
+        }
+    }
 }
 
-.footerBar{
+.footerBar {
     height: 80px;
+
+    .homeText {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .copyright{
+        font-size: 16px;
+    }
 }
